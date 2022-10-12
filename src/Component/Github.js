@@ -17,7 +17,7 @@ const Github = (props) => {
         await fetch(`https://api.github.com/users/${props.user_name}`, {
           method: "GET",
           headers: {
-            authorization: "Bearer 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",
+            authorization: "Bearer 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",
           },
         })
           .then((response) => response.json())

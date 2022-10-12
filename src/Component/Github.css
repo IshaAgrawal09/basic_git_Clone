@@ -82,9 +82,9 @@
   font-size: 17px;
   font-weight: 500;
 }
-.userInformation{
-    display: flex;
-    justify-content: space-evenly;
+.userInformation {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* RIGHT SECTION  */
@@ -124,6 +124,7 @@
   font-weight: 700;
   color: rgb(30, 114, 240);
   margin: 2% 0;
+  cursor: pointer;
 }
 .singleRepo p {
   margin: 2% 0;
