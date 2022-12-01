@@ -16,12 +16,7 @@ const Home = (props) => {
     if (search !== "") {
       (async () => {
         setLoading(true);
-        await fetch(`https://api.github.com/users/${search}`, {
-          method: "GET",
-          headers: {
-            authorization: "Bearer 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",
-          },
-        })
+        await fetch(`https://api.github.com/users/${search}`)
           .then((response) => response.json())
           .then((actualData) => {
             console.log(actualData);

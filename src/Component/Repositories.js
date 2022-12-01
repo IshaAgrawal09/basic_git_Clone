@@ -9,12 +9,7 @@ const Repositories = (props) => {
     (async () => {
       setLoad(true);
       console.log(props.userData.repos_url);
-      await fetch(`${props.userData.repos_url}`, {
-        method: "GET",
-        headers: {
-          authorization: "Bearer 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",
-        },
-      })
+      await fetch(`${props.userData.repos_url}`)
         .then((response) => response.json())
         .then((actualData) => {
           setRepo(actualData);

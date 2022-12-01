@@ -14,12 +14,7 @@ const Github = (props) => {
     if (props.user_name !== "") {
       (async () => {
         setLoad(true);
-        await fetch(`https://api.github.com/users/${props.user_name}`, {
-          method: "GET",
-          headers: {
-            authorization: "Bearer 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",
-          },
-        })
+        await fetch(`https://api.github.com/users/${props.user_name}`)
           .then((response) => response.json())
           .then((actualData) => {
             setUserData(actualData);
